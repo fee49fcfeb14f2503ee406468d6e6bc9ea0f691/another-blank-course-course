@@ -1,0 +1,20 @@
+title: another-blank-course
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate
+  ipsum sed turpis sagittis, et bibendum lacus faucibus. Mauris tempus quam
+  auctor ligula ultricies, a sagittis sem mollis. Nunc ut sollicitudin risus.
+  Nam interdum massa vitae tempor
+template:
+  repo: another-blank-course-template
+  name: another-blank-course
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
